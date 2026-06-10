@@ -1,0 +1,248 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="title" content="Britts Imperial College Australia" />
+    <meta name="description" content="Britts Imperial College Australia (RTO 5015) delivers nationally recognised business qualifications across Australia. Practical, industry-relevant training under the Australian Qualifications Framework, regulated by ASQA." />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Britts Imperial College Australia" />
+    <meta property="og:description" content="Nationally recognised business qualifications. RTO Code 5015. Practical, industry-relevant training for job-ready graduates." />
+
+    <meta name="twitter:title" content="Britts Imperial College Australia" />
+    <meta name="twitter:description" content="Nationally recognised business qualifications. RTO Code 5015. Practical, industry-relevant training for job-ready graduates." />
+
+    <title>
+        <asp:ContentPlaceHolder ID="title" runat="server">
+        </asp:ContentPlaceHolder> | Britts Imperial College Australia
+    </title>
+
+    <link rel="shortcut icon" href="assets/img/britts-logo.svg" type="image/svg+xml" />
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/flaticon-set.css" rel="stylesheet" />
+    <link href="assets/css/themify-icons.css" rel="stylesheet" />
+    <link href="assets/css/magnific-popup.css" rel="stylesheet" />
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="assets/css/animate.css" rel="stylesheet" />
+    <link href="assets/css/bootsnav.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/responsive.css" rel="stylesheet" />
+    <link href="assets/css/My_Style.css" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div class="se-pre-con"></div>
+
+        <div class="top-bar-area bg-dark inc-border text-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 address-info text-left">
+                        <div class="info">
+                            <ul>
+                                <li class="social">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fab fa-youtube"></i></a>
+                                </li>
+                                <li>
+                                    <i class="fas fa-user-shield"></i> RTO Code: <strong>5015</strong>
+                                </li>
+                                <li>
+                                    <i class="fas fa-phone"></i> Help Line: <strong>[Phone Number]</strong>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 link text-right">
+                        <ul>
+                            <li>
+                                <a href="Enrolment.aspx">Enrol Now</a>
+                            </li>
+                            <li>
+                                <a href="Contact.aspx">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <header id="home">
+            <nav class="navbar top-pad navbar-default attr-border-none navbar-fixed navbar-transparent white bootsnav">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="top-search">
+                            <div class="input-group">
+                                <form action="Courses.aspx" method="get">
+                                    <input type="text" name="q" class="form-control" placeholder="Search courses..." />
+                                    <button type="submit">
+                                        <i class="ti-search"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+
+                    <div class="attr-nav">
+                        <ul>
+                            <li class="search"><a href="#"><i class="ti-search"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" href="Default.aspx">
+                            <img src="assets/img/britts-logo-light.svg" class="logo logo-display" alt="Britts Imperial College Australia" />
+                            <img src="assets/img/britts-logo.svg" class="logo logo-scrolled" alt="Britts Imperial College Australia" />
+                        </a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="navbar-menu">
+                        <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                            <li>
+                                <a href="Default.aspx">Home</a>
+                            </li>
+                            <li>
+                                <a href="About.aspx">About Us</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Studying With Us</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="Enrolment.aspx">Enrolment</a></li>
+                                    <li><a href="Calendar.aspx">Calendar Dates</a></li>
+                                    <li><a href="Student_Support.aspx">Student Support Services</a></li>
+                                    <li><a href="Fees.aspx">Fees</a></li>
+                                    <li><a href="Policies.aspx">Policies</a></li>
+                                    <li><a href="Downloads.aspx">Download Centre</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="Courses.aspx">All Courses</a></li>
+                                    <li><a href="Course_Detail.aspx?code=BSB30120">BSB30120 – Certificate III in Business</a></li>
+                                    <li><a href="Course_Detail.aspx?code=BSB40120">BSB40120 – Certificate IV in Business</a></li>
+                                    <li><a href="Course_Detail.aspx?code=BSB50120">BSB50120 – Diploma of Business</a></li>
+                                    <li><a href="Course_Detail.aspx?code=BSB50420">BSB50420 – Diploma of Leadership and Management</a></li>
+                                    <li><a href="Course_Detail.aspx?code=BSB60120">BSB60120 – Advanced Diploma of Business</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="Contact.aspx">contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <asp:ContentPlaceHolder ID="body" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <footer class="bg-dark text-light">
+            <div class="container">
+                <div class="f-items" style="padding-top: 60px; padding-bottom: 60px;">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 item equal-height">
+                            <div class="f-item about">
+                                <h4>About Britts Imperial</h4>
+                                <p style="text-align: justify;">
+                                    Britts Imperial College Australia (RTO Code 5015) is a nationally registered training organisation delivering business qualifications to students across Australia. We focus on practical, industry-relevant training that helps you graduate ready for work.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 item equal-height">
+                            <div class="f-item link">
+                                <h4>Quick Links</h4>
+                                <ul>
+                                    <li><a href="Courses.aspx"><i class="ti-angle-right"></i>Our Courses</a></li>
+                                    <li><a href="Enrolment.aspx"><i class="ti-angle-right"></i>Enrolment</a></li>
+                                    <li><a href="Student_Support.aspx"><i class="ti-angle-right"></i>Student Support</a></li>
+                                    <li><a href="Policies.aspx"><i class="ti-angle-right"></i>Policies</a></li>
+                                    <li><a href="Downloads.aspx"><i class="ti-angle-right"></i>Download Centre</a></li>
+                                    <li><a href="Contact.aspx"><i class="ti-angle-right"></i>Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 item equal-height">
+                            <div class="f-item link">
+                                <h4>Contact</h4>
+                                <ul>
+                                    <li><i class="ti-email"></i> info@brittsimperial.edu.au</li>
+                                    <li><i class="ti-mobile"></i> [Phone Number]</li>
+                                    <li><i class="ti-location-pin"></i> [Campus Address]</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <p>&copy; Britts Imperial College Australia Pty Ltd | RTO Code 5015 | ABN 18 072 105 161. All rights reserved.</p>
+                        </div>
+                        <div class="col-md-2 text-right">
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <a href="Contact.aspx" id="enquiryFab" title="Enquire Now">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <script src="assets/js/jquery-1.12.4.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/equal-height.min.js"></script>
+        <script src="assets/js/jquery.appear.js"></script>
+        <script src="assets/js/jquery.easing.min.js"></script>
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="assets/js/modernizr.custom.13711.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/progress-bar.min.js"></script>
+        <script src="assets/js/isotope.pkgd.min.js"></script>
+        <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+        <script src="assets/js/count-to.js"></script>
+        <script src="assets/js/YTPlayer.min.js"></script>
+        <script src="assets/js/loopcounter.js"></script>
+        <script src="assets/js/jquery.nice-select.min.js"></script>
+        <script src="assets/js/bootsnav.js"></script>
+        <script src="assets/js/main.js"></script>
+
+        <asp:ContentPlaceHolder ID="jqury" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
