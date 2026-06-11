@@ -32,7 +32,7 @@ Table of contents
     11. Courses
         - Carousel
         - Grid
-        - Courses Details
+        - Courses Details.newsletter-area .input-group button
     12. Event
         - Flex
         - Grid
@@ -291,7 +291,7 @@ input {
         content: "";
         height: 100%;
         left: 0;
-        opacity: 0.5;
+        opacity: 0.3;
         position: absolute;
         top: 0;
         width: 100%;
@@ -509,7 +509,7 @@ input {
 }
 
 .bg-dark {
-    background: #33897c none repeat scroll 0 0;
+    background: #0e4546 none repeat scroll 0 0;
 }
 
 .btn-theme {
@@ -5464,13 +5464,13 @@ i.fas.fa-clock {
 .newsletter-area .input-group button {
     border: none;
     position: absolute;
-    right: 5px;
-    top: 5px;
-    min-height: 50px;
+    right: 0px;
+    top: 0px;
+    min-height: 39px;
     z-index: 9;
     background: #002147 none repeat scroll 0 0;
     padding: 0 30px;
-    border-radius: 30px;
+    border-radius: 18px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     letter-spacing: 1px;

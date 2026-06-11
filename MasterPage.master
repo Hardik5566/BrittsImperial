@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
 
 <!DOCTYPE html>
 
@@ -66,7 +66,7 @@
                                     <i class="fas fa-user-shield"></i> RTO Code: <strong>5015</strong>
                                 </li>
                                 <li>
-                                    <i class="fas fa-phone"></i> Help Line: <strong>[Phone Number]</strong>
+                                    <i class="fas fa-phone"></i> Help Line: <strong>+971 (06) 7675511</strong>
                                 </li>
                             </ul>
                         </div>
@@ -90,11 +90,11 @@
 
                 <div class="container">
                     <div class="row">
-                        <div class="top-search">
-                            <div class="input-group">
-                                <form action="Courses.aspx" method="get">
-                                    <input type="text" name="q" class="form-control" placeholder="Search courses..." />
-                                    <button type="submit">
+                        <div class="top-search" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 50px; box-shadow: 0 14px 45px rgba(12, 45, 74, 0.18); height: 52px; position: absolute; right: 15px; top: 90px; z-index: 99; min-width: 340px; max-width: 440px; overflow: hidden;">
+                            <div class="input-group" style="display: flex; align-items: center; height: 100%; width: 100%; margin: 0; position: relative;">
+                                <form action="Courses.aspx" method="get" style="display: flex; align-items: center; width: 100%; height: 100%; margin: 0; padding: 0; position: relative;">
+                                    <input type="text" name="q" class="form-control" placeholder="Search courses..." style="height: 50px; min-height: 50px; border: none; background: transparent; box-shadow: none; padding: 0 58px 0 22px; margin: 0; font-size: 14px; font-weight: 500; color: #0c2d4a; border-radius: 50px; width: 100%; outline: none;" />
+                                    <button type="submit" aria-label="Search courses" style="position: absolute; right: 5px; top: 50%; transform: translateY(-50%); width: 42px; height: 42px; border: none; border-radius: 50%; background: linear-gradient(135deg, #0e4546 0%, #157a7c 100%); color: #ffffff; font-size: 16px; line-height: 1; cursor: pointer; display: flex; align-items: center; justify-content: center; z-index: 9; padding: 0;">
                                         <i class="ti-search"></i>
                                     </button>
                                 </form>
@@ -116,8 +116,8 @@
                             <i class="fa fa-bars"></i>
                         </button>
                         <a class="navbar-brand" href="Default.aspx">
-                            <img src="assets/img/britts-logo-light.svg" class="logo logo-display" alt="Britts Imperial College Australia" />
-                            <img src="assets/img/britts-logo.svg" class="logo logo-scrolled" alt="Britts Imperial College Australia" />
+                            <img src="image/BIGE_Horizontal-Logo.png" class="logo logo-display" alt="Britts Imperial College Australia" />
+                            <img src="image/BIGE_Horizontal-Logo.png" class="logo logo-scrolled" alt="Britts Imperial College Australia" />
                         </a>
                     </div>
 
@@ -144,15 +144,15 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses</a>
                                 <ul class="dropdown-menu">
                                     <li><a href="Courses.aspx">All Courses</a></li>
-                                    <li><a href="Course_Detail.aspx?code=BSB30120">BSB30120 – Certificate III in Business</a></li>
-                                    <li><a href="Course_Detail.aspx?code=BSB40120">BSB40120 – Certificate IV in Business</a></li>
-                                    <li><a href="Course_Detail.aspx?code=BSB50120">BSB50120 – Diploma of Business</a></li>
-                                    <li><a href="Course_Detail.aspx?code=BSB50420">BSB50420 – Diploma of Leadership and Management</a></li>
-                                    <li><a href="Course_Detail.aspx?code=BSB60120">BSB60120 – Advanced Diploma of Business</a></li>
+                                    <li><a href="Course_Detail.aspx?code=BSB30120">BSB30120 Certificate III in Business</a></li>
+                                    <li><a href="Course_Detail.aspx?code=BSB40120">BSB40120 Certificate IV in Business</a></li>
+                                    <li><a href="Course_Detail.aspx?code=BSB50120">BSB50120 Diploma of Business</a></li>
+                                    <li><a href="Course_Detail.aspx?code=BSB50420">BSB50420 Diploma of Leadership and Management</a></li>
+                                    <li><a href="Course_Detail.aspx?code=BSB60120">BSB60120 Advanced Diploma of Business</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="Contact.aspx">contact</a>
+                                <a href="Contact.aspx">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -163,54 +163,72 @@
         <asp:ContentPlaceHolder ID="body" runat="server">
         </asp:ContentPlaceHolder>
 
-        <footer class="bg-dark text-light">
+        <footer class="bg-dark text-light bi-site-footer">
             <div class="container">
-                <div class="f-items" style="padding-top: 60px; padding-bottom: 60px;">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-6 item equal-height">
-                            <div class="f-item about">
+                <div class="bi-footer-main f-items">
+                    <div class="bi-footer-brand">
+                        <a href="Default.aspx" class="bi-footer-logo">
+                            <img src="image/BIGE_Horizontal-Logo_Dark-BG1-768x178.png" alt="Britts Imperial College Australia" />
+                        </a>
+                    </div>
+                    <div class="row bi-footer-row">
+                        <div class="col-lg-4 col-md-4 col-sm-12 bi-footer-col">
+                            <div class="f-item about bi-footer-block">
                                 <h4>About Britts Imperial</h4>
-                                <p style="text-align: justify;">
+                                <p>
                                     Britts Imperial College Australia (RTO Code 5015) is a nationally registered training organisation delivering business qualifications to students across Australia. We focus on practical, industry-relevant training that helps you graduate ready for work.
                                 </p>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 item equal-height">
-                            <div class="f-item link">
+                        <div class="col-lg-4 col-md-4 col-sm-12 bi-footer-col">
+                            <div class="f-item link bi-footer-block">
                                 <h4>Quick Links</h4>
                                 <ul>
-                                    <li><a href="Courses.aspx"><i class="ti-angle-right"></i>Our Courses</a></li>
-                                    <li><a href="Enrolment.aspx"><i class="ti-angle-right"></i>Enrolment</a></li>
-                                    <li><a href="Student_Support.aspx"><i class="ti-angle-right"></i>Student Support</a></li>
-                                    <li><a href="Policies.aspx"><i class="ti-angle-right"></i>Policies</a></li>
-                                    <li><a href="Downloads.aspx"><i class="ti-angle-right"></i>Download Centre</a></li>
-                                    <li><a href="Contact.aspx"><i class="ti-angle-right"></i>Contact Us</a></li>
+                                    <li><a href="Courses.aspx"><i class="ti-angle-right"></i> Our Courses</a></li>
+                                    <li><a href="Enrolment.aspx"><i class="ti-angle-right"></i> Enrolment</a></li>
+                                    <li><a href="Student_Support.aspx"><i class="ti-angle-right"></i> Student Support</a></li>
+                                    <li><a href="Policies.aspx"><i class="ti-angle-right"></i> Policies</a></li>
+                                    <li><a href="Downloads.aspx"><i class="ti-angle-right"></i> Download Centre</a></li>
+                                    <li><a href="Contact.aspx"><i class="ti-angle-right"></i> Contact Us</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 item equal-height">
-                            <div class="f-item link">
+                        <div class="col-lg-4 col-md-4 col-sm-12 bi-footer-col">
+                            <div class="f-item link bi-footer-block bi-footer-contact">
                                 <h4>Contact</h4>
                                 <ul>
-                                    <li><i class="ti-email"></i> info@brittsimperial.edu.au</li>
-                                    <li><i class="ti-mobile"></i> [Phone Number]</li>
-                                    <li><i class="ti-location-pin"></i> [Campus Address]</li>
+                                    <li>
+                                        <i class="ti-email"></i>
+                                        <span><a href="mailto:admissions@brittsimperial.com">admissions@brittsimperial.com</a></span>
+                                    </li>
+                                    <li>
+                                        <i class="ti-mobile"></i>
+                                        <span>
+                                            <a href="tel:+971067675511">+971 (06) 7675511</a>
+                                            <span class="bi-footer-sep">/</span>
+                                            <a href="tel:+971505626707">+971 50 562 6707</a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <i class="ti-location-pin"></i>
+                                        <span>Dubai | Sharjah | Ras Al Khaimah, UAE</span>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
+            <div class="footer-bottom bi-footer-bottom">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-10">
+                    <div class="row bi-footer-bottom-row">
+                        <div class="col-md-9 col-sm-12 bi-footer-copy">
                             <p>&copy; Britts Imperial College Australia Pty Ltd | RTO Code 5015 | ABN 18 072 105 161. All rights reserved.</p>
                         </div>
-                        <div class="col-md-2 text-right">
+                        <div class="col-md-3 col-sm-12 bi-footer-social text-right">
                             <ul>
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
                             </ul>
                         </div>
                     </div>

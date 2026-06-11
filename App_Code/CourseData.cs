@@ -79,6 +79,19 @@ public static class CourseData
         }
     }
 
+    public static string GetThumbImage(string code)
+    {
+        switch ((code ?? "").ToUpperInvariant())
+        {
+            case "BSB30120": return "assets/img/Banner/b1.jpg";
+            case "BSB40120": return "assets/img/Banner/b2.jpg";
+            case "BSB50120": return "assets/img/Banner/ad_g_5.jpg";
+            case "BSB50420": return "assets/img/Banner/ad_g_8.jpg";
+            case "BSB60120": return "assets/img/Banner/ad_g_6.jpg";
+            default: return "assets/img/Banner/b1.jpg";
+        }
+    }
+
     private static Dictionary<string, CourseInfo> BuildCourses()
     {
         var courses = new Dictionary<string, CourseInfo>(StringComparer.OrdinalIgnoreCase);

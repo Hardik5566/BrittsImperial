@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Home" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
+<%@ Page Title="Home" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
 
 
 
@@ -76,7 +76,7 @@
 
                                             <p data-animation="animated slideInLeft">
 
-                                                From Certificate III to Advanced Diploma — quality assured training under ASQA, mapped to the BSB Business Services Training Package.
+                                                From Certificate III to Advanced Diploma - quality assured training under ASQA, mapped to the BSB Business Services Training Package.
 
                                             </p>
 
@@ -262,7 +262,7 @@
 
                         <div class="thumb">
 
-                            <img src="assets/img/illustrations-1.svg" alt="Britts Imperial College Australia" />
+                            <img src="image/Student_image.jpg" alt="Students at Britts Imperial College Australia" />
 
                         </div>
 
@@ -316,11 +316,9 @@
 
                                     <div class="thumb">
 
-                                        <div class="bi-course-thumb <%# CourseData.GetThumbClass((string)Eval("Code")) %>" style="height:200px;">
+                                        <div class="bi-course-thumb">
 
-                                            <span class="level-badge"><%# Eval("Level") %></span>
-
-                                            <i class="<%# CourseData.GetThumbIcon((string)Eval("Code")) %>"></i>
+                                            <img src="<%# CourseData.GetThumbImage((string)Eval("Code")) %>" alt="<%# Eval("Title") %>" />
 
                                         </div>
 
@@ -328,7 +326,7 @@
 
                                             <a href="<%# CourseData.GetDetailUrl((string)Eval("Code")) %>">
 
-                                                <i class="<%# CourseData.GetThumbIcon((string)Eval("Code")) %>" style="font-size:40px;color:#fff;"></i>
+                                                <i class="ti-arrow-right" style="font-size:40px;color:#fff;"></i>
 
                                             </a>
 
@@ -349,8 +347,6 @@
                                         </div>
 
                                         <h4><a href="<%# CourseData.GetDetailUrl((string)Eval("Code")) %>"><%# Eval("Title") %></a></h4>
-
-                                        <p><%# Eval("ShortDescription") %></p>
 
                                         <div class="footer-meta">
 
@@ -422,7 +418,7 @@
 
                                 <input type="email" placeholder="Enter your e-mail here" class="form-control" name="email" />
 
-                                <button type="submit">Subscribe <i class="fa fa-paper-plane"></i></button>
+                                <button type="submit">Enroll Now</button>
 
                             </div>
 

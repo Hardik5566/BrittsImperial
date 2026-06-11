@@ -986,7 +986,7 @@ nav.navbar.bootsnav {
 @media (min-width: 1024px) {
 
     nav.navbar.navbar-default.top-pad.navbar-transparent {
-        margin-top: 65px;
+        margin-top: 55px;
     }
 
     nav.navbar.bootsnav ul.nav .dropdown-menu .dropdown-menu {
@@ -2504,8 +2504,8 @@ ul.cart-list > li.total > .btn {
         }
 
     nav.navbar.bootsnav.navbar-transparent.white {
-        background: transparent none repeat scroll 0 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        background: #ffffff;
+        border-bottom: 1px solid #ffffff;
     }
 
         nav.navbar.bootsnav.navbar-transparent.white.barber {
