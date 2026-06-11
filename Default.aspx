@@ -6,144 +6,6 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="head" runat="Server">
     <style>
-        /* Home support section — 4 equal boxes, responsive (Default.aspx only) */
-        .bi-home-support > .container > .row {
-            margin-left: 0;
-            margin-right: 0;
-        }
-
-        .bi-home-support .bi-content-card {
-            width: 100%;
-            max-width: 100%;
-            box-sizing: border-box;
-        }
-
-        .bi-home-support .bi-home-support-intro {
-            font-size: 17px;
-            font-weight: 500;
-            color: var(--bi-navy);
-            margin-bottom: 0;
-            line-height: 1.65;
-        }
-
-        .bi-home-support .bi-info-grid {
-            display: grid;
-            grid-template-columns: repeat(4, minmax(0, 1fr));
-            gap: 20px;
-            width: 100%;
-            margin: 28px 0 30px;
-            align-items: stretch;
-        }
-
-        .bi-info-card
-        {
-            background:none;
-            background-color:white;
-        }
-        .bi-home-support .bi-info-card {
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-            min-width: 0;
-            box-sizing: border-box;
-            padding: 24px 20px;
-        }
-
-        .bi-home-support .bi-info-card .icon {
-            flex-shrink: 0;
-        }
-
-        .bi-home-support .bi-info-card h4 {
-            font-size: 16px;
-            line-height: 1.35;
-        }
-
-        .bi-home-support .bi-info-card p {
-            flex: 1;
-        }
-
-        @media (max-width: 1199px) and (min-width: 992px) {
-            .bi-home-support .bi-info-grid {
-                gap: 16px;
-            }
-
-            .bi-home-support .bi-info-card {
-                padding: 22px 16px;
-            }
-
-            .bi-home-support .bi-info-card h4 {
-                font-size: 15px;
-            }
-
-            .bi-home-support .bi-info-card p {
-                font-size: 13px;
-            }
-        }
-
-        @media (max-width: 991px) {
-            .bi-home-support .bi-info-grid {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-                gap: 18px;
-            }
-        }
-
-        @media (max-width: 575px) {
-            .bi-home-support .bi-info-grid {
-                grid-template-columns: 1fr;
-                gap: 16px;
-            }
-
-            .bi-home-support .bi-info-card {
-                padding: 24px 20px;
-            }
-        }
-
-        /* Home enrol CTA — Enroll Now button vertical align */
-        .bi-home-enrol-cta .row {
-            display: flex;
-            align-items: center;
-        }
-
-        .bi-home-enrol-cta .col-md-5 {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-        }
-
-        .bi-home-enrol-cta form {
-            width: auto;
-            margin: 0;
-        }
-
-        .bi-home-enrol-cta form .input-group {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: auto;
-            position: static;
-        }
-
-        .bi-home-enrol-cta .input-group button {
-            position: static;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 47px;
-            height: 47px;
-            padding: 0 36px;
-            margin: 0;
-            border-radius: 30px;
-            line-height: 1;
-            white-space: nowrap;
-        }
-
-        @media (max-width: 991px) {
-            .bi-home-enrol-cta .col-md-5 {
-                justify-content: center;
-                margin-top: 20px;
-            }
-        }
-
         /* Home Popular Courses slider */
         .bi-home-courses-wrap {
             position: relative;
@@ -653,104 +515,62 @@
 
     </div>
 
-    <div class="bi-content-section bi-home-support">
+    <section class="bi-home-support">
         <div class="container">
-             <div class="site-heading text-center" style="margin-bottom:0px">
+            <div class="bi-home-support-head text-center">
+                <span class="bi-rto-badge">We Are Here For You</span>
+                <h2>Student Support Services</h2>
+                <p>Your success matters to us. Britts Imperial provides practical support to help you complete your studies with confidence.</p>
+            </div>
 
-                    <div class="col-md-8 col-md-offset-2">
-
-                        <h2>Student Support Services
-</h2>
-
-                        <p>
-
-                       Your success matters to us. Britts Imperial provides a range of support services to help you complete your studies.
-                        </p>
-
-                    </div>
-
+            <div class="bi-home-support-grid">
+                <div class="bi-home-support-card">
+                    <div class="bi-home-support-card-icon"><i class="fas fa-book-reader"></i></div>
+                    <h3>LLND Support</h3>
+                    <p>Extra help for students identified through the pre-training Language, Literacy, Numeracy and Digital assessment.</p>
                 </div>
-            <div class="row">
-                <div class="col-md-12">
-                <div class="bi-content-card" style="background:none;border:none;box-shadow:none">
-                    <div class="bi-info-grid">
-                        <div class="bi-info-card">
-                            <div class="icon"><i class="ti-book"></i></div>
-                            <h4>LLND Support</h4>
-                            <p>Additional help for students identified through the pre-training LLN assessment.</p>
-                        </div>
-                        <div class="bi-info-card">
-                            <div class="icon"><i class="ti-wheelchair"></i></div>
-                            <h4>Reasonable Adjustment</h4>
-                            <p>We make reasonable adjustments to support students with disability or additional needs.</p>
-                        </div>
-                        <div class="bi-info-card">
-                            <div class="icon"><i class="ti-blackboard"></i></div>
-                            <h4>Academic Support</h4>
-                            <p>Guidance from trainers and assessors, study-skills help and access to learning resources.</p>
-                        </div>
-                        <div class="bi-info-card">
-                            <div class="icon"><i class="ti-heart"></i></div>
-                            <h4>Welfare &amp; Wellbeing</h4>
-                            <p>Referral to external counselling, health and welfare services when needed.</p>
-                        </div>
-                    </div>
-                    <div class="bi-btn-group bi-btn-group-center">
-                        <a href="Contact.aspx" class="btn btn-theme effect btn-md">Contact Student Support</a>
-                    </div>
+                <div class="bi-home-support-card">
+                    <div class="bi-home-support-card-icon"><i class="fas fa-universal-access"></i></div>
+                    <h3>Reasonable Adjustment</h3>
+                    <p>We make reasonable adjustments to support students with disability or additional needs throughout training.</p>
                 </div>
+                <div class="bi-home-support-card">
+                    <div class="bi-home-support-card-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                    <h3>Academic Support</h3>
+                    <p>Guidance from trainers and assessors, study-skills help and access to learning resources when you need them.</p>
+                </div>
+                <div class="bi-home-support-card">
+                    <div class="bi-home-support-card-icon"><i class="fas fa-heart"></i></div>
+                    <h3>Welfare &amp; Wellbeing</h3>
+                    <p>Referral to external counselling, health and welfare services when you need professional support.</p>
+                </div>
+            </div>
+
+            <div class="bi-home-support-actions">
+                <a href="Student_Support.aspx" class="btn btn-theme effect btn-md"><i class="fas fa-info-circle"></i> Learn More</a>
+                <a href="Contact.aspx" class="btn circle btn-dark border btn-md"><i class="fas fa-envelope"></i> Contact Student Support</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="bi-home-enrol-hero" aria-label="Ready to enrol">
+        <div class="container">
+            <div class="bi-home-enrol-hero-content">
+                <span class="bi-home-enrol-hero-label">Take the Next Step</span>
+                <h2>Ready to Enrol?</h2>
+                <p>Contact our admissions team to request an enrolment form or speak with us about your study options.</p>
+                <ul class="bi-home-enrol-hero-points">
+                    <li><i class="fas fa-check-circle"></i> Nationally recognised qualifications</li>
+                    <li><i class="fas fa-check-circle"></i> Guided admissions support</li>
+                    <li><i class="fas fa-check-circle"></i> RTO Code 5015</li>
+                </ul>
+                <div class="bi-home-enrol-hero-actions">
+                    <a href="Contact.aspx" class="btn btn-theme effect btn-md"><i class="fas fa-envelope"></i> Enrol Now</a>
+                    <a href="Enrolment.aspx" class="btn btn-light border effect btn-md"><i class="fas fa-file-alt"></i> Enrolment Info</a>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="newsletter-area fixed bi-home-enrol-cta">
-
-        <div class="container">
-
-            <div class="subscribe-items shadow theme-hard default-padding bg-cover" style="background-image: url(assets/img/hero-banner.svg);">
-
-                <div class="row">
-
-                    <div class="col-md-7 left-info">
-
-                        <div class="info-box">
-
-                            <div class="icon"><i class="flaticon-email"></i></div>
-
-                            <div class="info">
-
-                                <h3>Ready to Enrol?</h3>
-
-                                <p>Contact our admissions team to request an enrolment form or speak with us about your study options.</p>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-5">
-
-                        <form action="Contact.aspx">
-
-                            <div class="input-group">
-
-                                <button type="submit">Enroll Now</button>
-
-                            </div>
-
-                        </form>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
+    </section>
 
 </asp:Content>
 

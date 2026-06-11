@@ -15,23 +15,50 @@
     </div>
 
     <div class="bi-calendar-page">
-        <div class="container">
-            <div class="bi-cal-card">
-                <div class="bi-cal-card-icon">
-                    <i class="fas fa-calendar-alt"></i>
-                </div>
-                <h2>Course Intakes &amp; Term Dates</h2>
-                <p class="bi-cal-card-text">
-                    Britts Imperial offers regular course intakes throughout the year. Intake and term dates can change, so please
-                    <a href="Contact.aspx">contact us</a> for the current schedule of upcoming start dates or refer to the term calendar in the
-                    <a href="Downloads.aspx">Download Centre</a>.
-                </p>
-                <div class="bi-cal-actions">
-                    <a href="Contact.aspx" class="btn btn-theme effect btn-md"><i class="fas fa-envelope"></i> Contact Us</a>
-                    <a href="Downloads.aspx" class="btn btn-dark border btn-md"><i class="fas fa-download"></i> Download Centre</a>
+        <section class="bi-cal-premium">
+            <div class="container">
+                <div class="bi-cal-premium-layout">
+                    <div class="bi-cal-premium-visual">
+                        <div class="bi-cal-frame">
+                            <img src="assets/img/college-students-about.jpg" alt="Students at Britts Imperial College Australia" />
+                        </div>
+                        <div class="bi-cal-visual-note">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>Regular intakes throughout the year</span>
+                        </div>
+                    </div>
+
+                    <div class="bi-cal-premium-content">
+                        <p class="bi-cal-eyebrow">Academic Calendar</p>
+                        <h2>Course Intakes and Term Dates</h2>
+                        <p class="bi-cal-lead">
+                            Britts Imperial offers regular course intakes throughout the year. Intake and term dates can change, so please
+                            <a href="Contact.aspx">contact us</a> for the current schedule of upcoming start dates or refer to the term calendar in the
+                            <a href="Downloads.aspx">Download Centre</a>.
+                        </p>
+
+                        <div class="bi-cal-premium-tiles">
+                            <a href="Contact.aspx" class="bi-cal-tile">
+                                <div class="bi-cal-tile-head">
+                                    <span class="bi-cal-tile-icon"><i class="fas fa-envelope"></i></span>
+                                    <span class="bi-cal-tile-go"><i class="fas fa-arrow-right"></i></span>
+                                </div>
+                                <h3>Contact Us</h3>
+                                <p>Request the current schedule of upcoming start dates for your course.</p>
+                            </a>
+                            <a href="Downloads.aspx" class="bi-cal-tile">
+                                <div class="bi-cal-tile-head">
+                                    <span class="bi-cal-tile-icon"><i class="fas fa-download"></i></span>
+                                    <span class="bi-cal-tile-go"><i class="fas fa-arrow-right"></i></span>
+                                </div>
+                                <h3>Download Centre</h3>
+                                <p>Access the term calendar, timetables and enrolment documents.</p>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     </div>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="jqury" runat="Server"></asp:Content>

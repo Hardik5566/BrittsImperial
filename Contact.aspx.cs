@@ -17,11 +17,12 @@ public partial class ContactPage : System.Web.UI.Page
         {
             var body = new StringBuilder();
             body.Append("<h3>Website Enquiry - Britts Imperial College Australia</h3>");
+            body.Append("<p><strong>Name:</strong> " + Server.HtmlEncode(txtName.Text.Trim()) + "</p>");
             body.Append("<p><strong>Phone:</strong> " + Server.HtmlEncode(txtPhone.Text.Trim()) + "</p>");
             body.Append("<p><strong>Email:</strong> " + Server.HtmlEncode(txtEmail.Text.Trim()) + "</p>");
-            body.Append("<p><strong>Address:</strong><br/>" + Server.HtmlEncode(txtAddress.Text.Trim()).Replace("\n", "<br/>") + "</p>");
+            body.Append("<p><strong>Message:</strong><br/>" + Server.HtmlEncode(txtMessage.Text.Trim()).Replace("\n", "<br/>") + "</p>");
 
-            string safeSubject = "Website Enquiry from " + txtEmail.Text.Trim().Replace("\r", "").Replace("\n", "");
+            string safeSubject = "Website Enquiry from " + txtName.Text.Trim().Replace("\r", "").Replace("\n", "");
 
             string result = Send_Mail.MailWithouAttachment(
                 "vaghasiyaprit799@gmail.com",
@@ -37,9 +38,10 @@ public partial class ContactPage : System.Web.UI.Page
             {
                 pnlMessage.CssClass = "alert alert-success";
                 pnlMessage.Controls.Add(new LiteralControl("Thank you for your enquiry. We will get back to you shortly."));
+                txtName.Text = string.Empty;
                 txtPhone.Text = string.Empty;
                 txtEmail.Text = string.Empty;
-                txtAddress.Text = string.Empty;
+                txtMessage.Text = string.Empty;
             }
             else
             {

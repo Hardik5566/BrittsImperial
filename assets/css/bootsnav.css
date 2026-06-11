@@ -2504,8 +2504,8 @@ ul.cart-list > li.total > .btn {
         }
 
     nav.navbar.bootsnav.navbar-transparent.white {
-        background: #ffffff;
-        border-bottom: 1px solid #ffffff;
+        background: transparent none repeat scroll 0 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
         nav.navbar.bootsnav.navbar-transparent.white.barber {

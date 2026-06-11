@@ -15,23 +15,21 @@
 
     <div class="about-area bi-about-page default-padding">
         <div class="container">
-            <div class="row">
-                <div class="about-items">
-                    <div class="col-md-6 about-info">
-                        <span class="bi-rto-badge">RTO Code 5015</span>
-                        <h2>Why Choose <span>Britts Imperial</span></h2>
-                        <p>Britts Imperial College Australia is a privately operated registered training organisation focused on quality business education and practical, job-ready skills.</p>
-                        <blockquote>
-                            We deliver nationally recognised qualifications under the Australian Qualifications Framework, regulated by the Australian Skills Quality Authority (ASQA).
-                        </blockquote>
-                        <div class="bi-btn-group">
-                            <a class="btn btn-theme effect btn-md" href="Enrolment.aspx">Start Enrolment</a>
-                            <a class="btn btn-dark border btn-md" href="Contact.aspx">Contact Us</a>
-                        </div>
+            <div class="row about-items">
+                <div class="col-md-6 col-sm-12 col-xs-12 about-info">
+                    <span class="bi-rto-badge">RTO Code 5015</span>
+                    <h2>Why Choose <span>Britts Imperial</span></h2>
+                    <p>Britts Imperial College Australia is a privately operated registered training organisation focused on quality business education and practical, job-ready skills.</p>
+                    <blockquote>
+                        We deliver nationally recognised qualifications under the Australian Qualifications Framework, regulated by the Australian Skills Quality Authority (ASQA).
+                    </blockquote>
+                    <div class="bi-btn-group">
+                        <a class="btn btn-theme effect btn-md" href="Enrolment.aspx">Start Enrolment</a>
+                        <a class="btn btn-dark border btn-md" href="Contact.aspx">Contact Us</a>
                     </div>
-                    <div class="col-md-6 thumb">
-                        <img src="image/Student_image.jpg" alt="Students at Britts Imperial College Australia">
-                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12 thumb">
+                    <img src="image/Student_image.jpg" alt="Students at Britts Imperial College Australia">
                 </div>
             </div>
         </div>
@@ -45,35 +43,35 @@
             </div>
 
             <div class="row bi-about-cards-row">
-                <div class="equal-height col-md-4 col-sm-6">
+                <div class="equal-height col-md-4 col-sm-6 col-xs-12">
                     <div class="bi-info-card">
                         <div class="icon"><i class="ti-medall"></i></div>
                         <h4>Nationally Recognised Training</h4>
                         <p>Every qualification is on our ASQA scope of registration and issued under the AQF.</p>
                     </div>
                 </div>
-                <div class="equal-height col-md-4 col-sm-6">
+                <div class="equal-height col-md-4 col-sm-6 col-xs-12">
                     <div class="bi-info-card">
                         <div class="icon"><i class="ti-shield"></i></div>
                         <h4>Quality Assured</h4>
                         <p>We operate under the Standards for Registered Training Organisations and are regulated by ASQA.</p>
                     </div>
                 </div>
-                <div class="equal-height col-md-4 col-sm-6">
+                <div class="equal-height col-md-4 col-sm-6 col-xs-12">
                     <div class="bi-info-card">
                         <div class="icon"><i class="ti-briefcase"></i></div>
                         <h4>Industry-Focused Delivery</h4>
                         <p>Training is mapped to the BSB Business Services Training Package and current workplace needs.</p>
                     </div>
                 </div>
-                <div class="equal-height col-md-4 col-sm-6">
+                <div class="equal-height col-md-4 col-sm-6 col-xs-12">
                     <div class="bi-info-card">
                         <div class="icon"><i class="ti-headphone-alt"></i></div>
                         <h4>Student Support</h4>
                         <p>LLN help and learner support are available throughout your course.</p>
                     </div>
                 </div>
-                <div class="equal-height col-md-4 col-sm-6">
+                <div class="equal-height col-md-4 col-sm-6 col-xs-12">
                     <div class="bi-info-card">
                         <div class="icon"><i class="ti-direction-alt"></i></div>
                         <h4>Clear Pathways</h4>

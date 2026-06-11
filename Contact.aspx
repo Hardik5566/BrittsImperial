@@ -15,70 +15,83 @@
 
     <div class="bi-contact-page">
         <div class="container">
-            <div class="bi-contact-shell">
-                <div class="bi-contact-cards">
-                    <div class="bi-contact-card">
-                        <div class="bi-contact-card-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <h4>Phone</h4>
-                        <p>
-                            <a href="tel:+971067675511">+971 (06) 7675511</a><br />
-                            <a href="tel:+971505626707">+971 50 562 6707</a>
-                        </p>
-                    </div>
-                    <div class="bi-contact-card">
-                        <div class="bi-contact-card-icon">
-                            <i class="far fa-envelope"></i>
-                        </div>
-                        <h4>Email</h4>
-                        <p>
-                            <a href="mailto:admissions@brittsimperial.com">admissions@brittsimperial.com</a>
-                        </p>
-                    </div>
-                    <div class="bi-contact-card">
-                        <div class="bi-contact-card-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <h4>Campus Locations</h4>
-                        <p>
-                            <strong>Britts Imperial Global Education</strong><br />
-                            Dubai | Sharjah | Ras Al Khaimah<br />
-                            United Arab Emirates
-                        </p>
-                    </div>
-                </div>
-
+            <div class="bi-contact-split">
                 <div class="bi-contact-form-card">
                     <div class="bi-contact-form-heading">
-                        <h3>Send an Enquiry</h3>
-                        <p>Complete the form below and our admissions team will respond as soon as possible.</p>
+                        <p class="bi-contact-eyebrow">Send an Enquiry</p>
+                        <h3>Get in Touch</h3>
+                        <p>Complete the form and our admissions team will respond as soon as possible.</p>
                     </div>
 
                     <asp:Panel ID="pnlMessage" runat="server" Visible="false" CssClass="alert bi-contact-alert"></asp:Panel>
 
                     <div class="bi-contact-form">
-                        <div class="bi-contact-form-grid">
+                        <div class="bi-contact-form-stack">
                             <div class="form-group">
-                                <label for="<%= txtPhone.ClientID %>">Phone</label>
-                                <asp:TextBox ID="txtPhone" runat="server" CssClass="form-control" placeholder="phone number"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="rfvPhone" runat="server" ControlToValidate="txtPhone" ErrorMessage="Phone is required" CssClass="txt_error" Display="Dynamic" ValidationGroup="EnquiryForm" />
+                                <label for="<%= txtName.ClientID %>">Name</label>
+                                <asp:TextBox ID="txtName" runat="server" CssClass="form-control" placeholder="Your full name"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="rfvName" runat="server" ControlToValidate="txtName" ErrorMessage="Name is required" CssClass="txt_error" Display="Dynamic" ValidationGroup="EnquiryForm" />
+                            </div>
+                            <div class="bi-contact-form-row">
+                                <div class="form-group">
+                                    <label for="<%= txtPhone.ClientID %>">Phone</label>
+                                    <asp:TextBox ID="txtPhone" runat="server" CssClass="form-control" placeholder="Your phone number"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="rfvPhone" runat="server" ControlToValidate="txtPhone" ErrorMessage="Phone is required" CssClass="txt_error" Display="Dynamic" ValidationGroup="EnquiryForm" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="<%= txtEmail.ClientID %>">Email</label>
+                                    <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control" placeholder="Your email address" TextMode="Email"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="rfvEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="Email is required" CssClass="txt_error" Display="Dynamic" ValidationGroup="EnquiryForm" />
+                                    <asp:RegularExpressionValidator ID="revEmail" runat="server" ControlToValidate="txtEmail" ValidationExpression="^.+@.+\..+$" ErrorMessage="Invalid email format" CssClass="txt_error" Display="Dynamic" ValidationGroup="EnquiryForm" />
+                                </div>
                             </div>
                             <div class="form-group">
-                                <label for="<%= txtEmail.ClientID %>">Email</label>
-                                <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control" placeholder="email address" TextMode="Email"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="rfvEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="Email is required" CssClass="txt_error" Display="Dynamic" ValidationGroup="EnquiryForm" />
-                                <asp:RegularExpressionValidator ID="revEmail" runat="server" ControlToValidate="txtEmail" ValidationExpression="^^@\s+@^@\s+\.^@\s+$" ErrorMessage="Invalid email format" CssClass="txt_error" Display="Dynamic" ValidationGroup="EnquiryForm" />
-                            </div>
-                            <div class="form-group bi-contact-form-full">
-                                <label for="<%= txtAddress.ClientID %>">Address</label>
-                                <asp:TextBox ID="txtAddress" runat="server" CssClass="form-control" TextMode="MultiLine" Rows="4" placeholder="campus address"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="rfvAddress" runat="server" ControlToValidate="txtAddress" ErrorMessage="Address is required" CssClass="txt_error" Display="Dynamic" ValidationGroup="EnquiryForm" />
+                                <label for="<%= txtMessage.ClientID %>">Message</label>
+                                <asp:TextBox ID="txtMessage" runat="server" CssClass="form-control" TextMode="MultiLine" Rows="5" placeholder="Your message"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="rfvMessage" runat="server" ControlToValidate="txtMessage" ErrorMessage="Message is required" CssClass="txt_error" Display="Dynamic" ValidationGroup="EnquiryForm" />
                             </div>
                             <div class="bi-contact-form-actions">
                                 <asp:Button ID="btnSubmit" runat="server" Text="Send Message" CssClass="btn btn-theme effect btn-md bi-contact-submit" OnClick="btnSubmit_Click" ValidationGroup="EnquiryForm" />
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <div class="bi-contact-info-card">
+                    <p class="bi-contact-eyebrow bi-contact-eyebrow--light">Contact Details</p>
+                    <h3>We Are Here to Help</h3>
+                    <p class="bi-contact-info-lead">Reach our admissions team by phone, email or visit one of our campus locations.</p>
+
+                    <ul class="bi-contact-info-list">
+                        <li>
+                            <span class="bi-contact-info-icon"><i class="fas fa-phone"></i></span>
+                            <div>
+                                <strong>Phone</strong>
+                                <a href="tel:+97100 000 0000">+971 00 000 0000</a>
+                                <a href="tel:+97100 000 0000">+971 00 000 0000</a>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="bi-contact-info-icon"><i class="far fa-envelope"></i></span>
+                            <div>
+                                <strong>Email</strong>
+                                <a href="mailto:Info@brittsimperial.com.au">Info@brittsimperial.com.au</a>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="bi-contact-info-icon"><i class="fas fa-map-marker-alt"></i></span>
+                            <div>
+                                <strong>Campus Locations</strong>
+                                <span>-----------------------------</span>
+                                <span>---- | ----- | ------------</span>
+                                <span>----------------------------</span>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="bi-contact-info-badge">
+                        <i class="fas fa-user-shield"></i>
+                        <span>RTO Code 5015</span>
                     </div>
                 </div>
             </div>
