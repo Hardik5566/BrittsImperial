@@ -134,7 +134,6 @@
                                 <ul class="dropdown-menu">
                                     <li><a href="Enrolment.aspx">Enrolment</a></li>
                                     <li><a href="Calendar.aspx">Calendar Dates</a></li>
-                                    <li><a href="Student_Support.aspx">Student Support Services</a></li>
                                     <li><a href="Fees.aspx">Fees</a></li>
                                     <li><a href="Policies.aspx">Policies</a></li>
                                     <li><a href="Downloads.aspx">Download Centre</a></li>
@@ -186,7 +185,6 @@
                                 <ul>
                                     <li><a href="Courses.aspx"><i class="ti-angle-right"></i> Our Courses</a></li>
                                     <li><a href="Enrolment.aspx"><i class="ti-angle-right"></i> Enrolment</a></li>
-                                    <li><a href="Student_Support.aspx"><i class="ti-angle-right"></i> Student Support</a></li>
                                     <li><a href="Policies.aspx"><i class="ti-angle-right"></i> Policies</a></li>
                                     <li><a href="Downloads.aspx"><i class="ti-angle-right"></i> Download Centre</a></li>
                                     <li><a href="Contact.aspx"><i class="ti-angle-right"></i> Contact Us</a></li>
