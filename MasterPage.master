@@ -67,7 +67,7 @@
                                     <i class="fas fa-user-shield"></i>RTO Code: <strong>5015</strong>
                                 </li>
                                 <li>
-                                    <i class="fas fa-phone"></i>Help Line: <strong>+971 00 000 0000</strong>
+                                    <i class="fas fa-phone"></i>Help Line: <strong>+61 40 522 1940</strong>
                                 </li>
                             </ul>
                         </div>
@@ -91,10 +91,10 @@
 
                 <div class="container">
                     <div class="row">
-                        <div class="top-search" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 50px; box-shadow: 0 14px 45px rgba(12, 45, 74, 0.18); height: 52px; position: absolute; right: 15px; top: 90px; z-index: 99; min-width: 340px; max-width: 440px; overflow: hidden;">
-                            <div class="input-group bi-header-search-wrap" style="display: flex; align-items: center; height: 100%; width: 100%; margin: 0; position: relative;">
-                                <input type="text" id="biHeaderSearchInput" class="form-control" placeholder="Search website..." autocomplete="off" style="height: 50px; min-height: 50px; border: none; background: transparent; box-shadow: none; padding: 0 58px 0 22px; margin: 0; font-size: 14px; font-weight: 500; color: #0c2d4a; border-radius: 50px; width: 100%; outline: none;" />
-                                <button type="button" id="biHeaderSearchBtn" aria-label="Search website" onclick="biSubmitSiteSearch();" style="position: absolute; right: 5px; top: 50%; transform: translateY(-50%); width: 42px; height: 42px; border: none; border-radius: 50%; background: linear-gradient(135deg, #0e4546 0%, #157a7c 100%); color: #ffffff; font-size: 16px; line-height: 1; cursor: pointer; display: flex; align-items: center; justify-content: center; z-index: 9; padding: 0;">
+                        <div class="top-search bi-header-top-search">
+                            <div class="input-group bi-header-search-wrap">
+                                <input type="text" id="biHeaderSearchInput" class="form-control bi-header-search-input" placeholder="Search website..." autocomplete="off" />
+                                <button type="button" id="biHeaderSearchBtn" class="bi-header-search-btn" aria-label="Search website" onclick="biSubmitSiteSearch();">
                                     <i class="ti-search"></i>
                                 </button>
                             </div>
@@ -102,22 +102,24 @@
                     </div>
                 </div>
 
-                <div class="container">
+                <div class="container bi-nav-container">
 
-                    <div class="attr-nav">
-                        <ul>
-                            <li class="search"><a href="#"><i class="ti-search"></i></a></li>
-                        </ul>
-                    </div>
+                    <div class="bi-mobile-nav-bar">
+                        <div class="attr-nav">
+                            <ul>
+                                <li class="search"><a href="#"><i class="ti-search"></i></a></li>
+                            </ul>
+                        </div>
 
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                            <i class="fa fa-bars"></i>
-                        </button>
-                        <a class="navbar-brand" href="Default.aspx">
-                            <img src="image/BIGE_Horizontal-Logo.png" style="background-color: white; border-radius: 5px; padding: 0px 10px" class="logo logo-display" alt="Britts Imperial College Australia" />
-                            <img src="image/BIGE_Horizontal-Logo.png" class="logo logo-scrolled" alt="Britts Imperial College Australia" />
-                        </a>
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu" aria-expanded="false" aria-controls="navbar-menu" aria-label="Toggle navigation">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <a class="navbar-brand" href="Default.aspx">
+                                <img src="image/BIGE_Horizontal-Logo.png" style="background-color: white; border-radius: 5px; padding: 0px 10px" class="logo logo-display" alt="Britts Imperial College Australia" />
+                                <img src="image/BIGE_Horizontal-Logo.png" class="logo logo-scrolled" alt="Britts Imperial College Australia" />
+                            </a>
+                        </div>
                     </div>
 
                     <div class="collapse navbar-collapse" id="navbar-menu">
@@ -196,20 +198,18 @@
                                 <ul>
                                     <li>
                                         <i class="ti-email"></i>
-                                        <span><a href="mailto:Info@brittsimperial.com.au">Info@brittsimperial.com.au</a></span>
+                                        <span><a href="mailto:ceo@brittsimperial.com.au">ceo@brittsimperial.com.au</a></span>
                                     </li>
                                     <li>
                                         <i class="ti-mobile"></i>
                                         <span>
-                                            <a href="tel:+97100 000 0000">+971 00 000 0000</a>
-                                            <span class="bi-footer-sep">/</span>
-                                            <a href="tel:+97100 000 0000">+971 00 000 0000</a>
+                                            <a href="tel:+61405221940">+61 40 522 1940</a>
                                         </span>
                                     </li>
-                                    <li>
+                                   <%-- <li>
                                         <i class="ti-location-pin"></i>
                                         <span>-------------------------------</span>
-                                    </li>
+                                    </li>--%>
                                 </ul>
                             </div>
                         </div>
@@ -274,6 +274,30 @@
                     }
                 });
             })();
+
+            (function ($) {
+                $(document).ready(function () {
+                    var $navMenu = $('#navbar-menu');
+                    var $topSearch = $('.top-search');
+
+                    $('.attr-nav .search > a').on('click', function () {
+                        if ($navMenu.hasClass('in')) {
+                            $navMenu.collapse('hide');
+                        }
+                    });
+
+                    $('.navbar-toggle').on('click', function () {
+                        if ($topSearch.is(':visible')) {
+                            $topSearch.stop(true, true).slideUp(200);
+                        }
+                    });
+
+                    $navMenu.on('shown.bs.collapse hidden.bs.collapse', function () {
+                        var expanded = $navMenu.hasClass('in');
+                        $('.navbar-toggle').attr('aria-expanded', expanded ? 'true' : 'false');
+                    });
+                });
+            })(jQuery);
         </script>
 
         <asp:ContentPlaceHolder ID="jqury" runat="server">

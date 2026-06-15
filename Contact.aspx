@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Contact Us" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Contact.aspx.cs" Inherits="ContactPage" %>
+<%@ Page Title="Contact Us" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Contact.aspx.cs" Inherits="ContactPage" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="title" runat="Server">Contact Us</asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="head" runat="Server"></asp:Content>
@@ -67,15 +67,14 @@
                             <span class="bi-contact-info-icon"><i class="fas fa-phone"></i></span>
                             <div>
                                 <strong>Phone</strong>
-                                <a href="tel:+97100 000 0000">+971 00 000 0000</a>
-                                <a href="tel:+97100 000 0000">+971 00 000 0000</a>
+                                <a href="tel:+61405221940">+61 40 522 1940</a>
                             </div>
                         </li>
                         <li>
                             <span class="bi-contact-info-icon"><i class="far fa-envelope"></i></span>
                             <div>
                                 <strong>Email</strong>
-                                <a href="mailto:Info@brittsimperial.com.au">Info@brittsimperial.com.au</a>
+                                <a href="mailto:ceo@brittsimperial.com.au">ceo@brittsimperial.com.au</a>
                             </div>
                         </li>
                         <li>
