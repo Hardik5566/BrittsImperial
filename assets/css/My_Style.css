@@ -1644,25 +1644,30 @@ nav.navbar.bootsnav.navbar-fixed:not(.navbar-transparent) .attr-nav > ul > li > 
 }
 
 .bi-policy-list-section {
-    padding: 75px 0 85px;
-    background:
-        radial-gradient(circle at 10% 20%, rgba(201, 162, 39, 0.05) 0%, transparent 40%),
-        var(--bi-bg);
+    padding: 72px 0 96px;
+    background: #f8fafc;
 }
 
-.bi-policy-section-head {
+.bi-policy-docs {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.bi-policy-docs-intro {
+    margin-bottom: 32px;
     text-align: center;
-    margin-bottom: 48px;
 }
 
-.bi-policy-section-head h3 {
+.bi-policy-docs-intro h3 {
     color: var(--bi-navy);
+    font-size: 30px;
     font-weight: 700;
-    font-size: 28px;
-    margin: 0 0 12px;
+    line-height: 1.2;
+    letter-spacing: -0.3px;
+    margin: 0 0 10px;
 }
 
-.bi-policy-section-head p {
+.bi-policy-docs-intro p {
     color: var(--bi-slate);
     font-size: 16px;
     line-height: 1.7;
@@ -1670,69 +1675,96 @@ nav.navbar.bootsnav.navbar-fixed:not(.navbar-transparent) .attr-nav > ul > li > 
     max-width: 520px;
 }
 
-.bi-policy-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 24px;
-}
-
-.bi-policy-item {
+.bi-policy-table-wrap {
     background: #ffffff;
-    border: 1px solid var(--bi-border);
+    border: 1px solid rgba(12, 45, 74, 0.1);
     border-radius: 14px;
-    padding: 30px 28px;
-    box-shadow: 0 6px 24px rgba(12, 45, 74, 0.04);
-    transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+    box-shadow: 0 12px 40px rgba(12, 45, 74, 0.06);
+    overflow: hidden;
 }
 
-.bi-policy-item:hover {
-    border-color: rgba(201, 162, 39, 0.4);
-    box-shadow: 0 16px 40px rgba(12, 45, 74, 0.1);
-    transform: translateY(-3px);
+.bi-policy-table {
+    width: 100%;
+    margin: 0;
+    border-collapse: collapse;
+    background: #ffffff;
 }
 
-.bi-policy-item--wide {
-    grid-column: 1 / -1;
-    display: flex;
-    align-items: flex-start;
-    gap: 22px;
+.bi-policy-table thead th {
+    padding: 16px 28px;
+    background: var(--bi-navy);
+    color: #ffffff;
+    border: none;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-align: left;
 }
 
-.bi-policy-item-icon {
-    width: 52px;
-    height: 52px;
-    display: flex;
+.bi-policy-table thead th.bi-policy-table-action-col {
+    text-align: right;
+}
+
+.bi-policy-table tbody td {
+    padding: 20px 28px;
+    border-top: 1px solid #edf2f7;
+    color: var(--bi-navy);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    vertical-align: middle;
+}
+
+.bi-policy-table tbody tr:nth-child(even) td {
+    background: #fbfcfd;
+}
+
+.bi-policy-table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.bi-policy-table tbody tr:hover td {
+    background: #f4f8fb;
+}
+
+.bi-policy-table-action-col {
+    width: 160px;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.bi-policy-table-download {
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(145deg, var(--bi-navy) 0%, var(--bi-navy-light) 100%);
-    border-radius: 12px;
-    color: var(--bi-gold);
-    font-size: 20px;
-    margin-bottom: 18px;
-    flex-shrink: 0;
-}
-
-.bi-policy-item--wide .bi-policy-item-icon {
-    margin-bottom: 0;
-}
-
-.bi-policy-item-body {
-    flex: 1;
-}
-
-.bi-policy-item h4 {
+    gap: 8px;
+    min-width: 124px;
+    padding: 10px 16px;
+    border: 1px solid rgba(12, 45, 74, 0.16);
+    border-radius: 8px;
+    background: #ffffff;
     color: var(--bi-navy);
+    font-size: 13px;
     font-weight: 700;
-    font-size: 17px;
-    margin: 0 0 10px;
-    line-height: 1.35;
+    text-decoration: none;
+    transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 
-.bi-policy-item p {
-    color: var(--bi-slate);
-    font-size: 15px;
-    line-height: 1.75;
-    margin: 0;
+.bi-policy-table-download i {
+    font-size: 12px;
+    color: var(--bi-gold-hover);
+    transition: color 0.2s ease;
+}
+
+.bi-policy-table-download:hover {
+    background: var(--bi-navy);
+    border-color: var(--bi-navy);
+    color: #ffffff;
+}
+
+.bi-policy-table-download:hover i {
+    color: #ffffff;
 }
 
 .bi-policy-cta {
@@ -5583,13 +5615,14 @@ nav.navbar.bootsnav.navbar-fixed:not(.navbar-transparent) .attr-nav > ul > li > 
         order: -1;
     }
 
-    .bi-policy-grid {
-        grid-template-columns: 1fr;
+    .bi-policy-docs-intro h3 {
+        font-size: 24px;
     }
 
-    .bi-policy-item--wide {
-        flex-direction: column;
-        gap: 16px;
+    .bi-policy-table thead th,
+    .bi-policy-table tbody td {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .bi-policy-cta-inner {
@@ -5853,15 +5886,74 @@ nav.navbar.bootsnav.navbar-fixed:not(.navbar-transparent) .attr-nav > ul > li > 
     }
 
     .bi-policy-list-section {
-        padding: 50px 0 55px;
+        padding: 48px 0 56px;
     }
 
-    .bi-policy-section-head {
-        margin-bottom: 32px;
+    .bi-policy-docs-intro {
+        margin-bottom: 24px;
+        text-align: left;
     }
 
-    .bi-policy-item {
-        padding: 24px 22px;
+    .bi-policy-docs-intro p {
+        max-width: none;
+    }
+
+    .bi-policy-table-wrap {
+        border-radius: 12px;
+    }
+
+    .bi-policy-table thead {
+        display: none;
+    }
+
+    .bi-policy-table tbody tr {
+        display: block;
+        padding: 16px 18px;
+        border-top: 1px solid #edf2f7;
+    }
+
+    .bi-policy-table tbody tr:first-child {
+        border-top: none;
+    }
+
+    .bi-policy-table tbody td {
+        display: block;
+        padding: 0;
+        border: none;
+        background: transparent !important;
+    }
+
+    .bi-policy-table tbody td[data-label="Policy"] {
+        margin-bottom: 12px;
+        font-size: 16px;
+        line-height: 1.45;
+    }
+
+    .bi-policy-table tbody td[data-label="Download"] {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+    }
+
+    .bi-policy-table tbody td[data-label="Download"]::before {
+        content: attr(data-label);
+        color: var(--bi-slate);
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+    }
+
+    .bi-policy-table-action-col {
+        width: auto;
+        text-align: right;
+    }
+
+    .bi-policy-table-download {
+        min-width: 112px;
+        padding: 9px 14px;
+        font-size: 12px;
     }
 
     .bi-policy-cta {

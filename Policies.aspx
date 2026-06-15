@@ -40,56 +40,53 @@
 
         <section class="bi-policy-list-section">
             <div class="container">
-                <div class="bi-policy-section-head">
-                    <h3>Key Policies</h3>
-                    <p>Our core policies that govern your training experience and protect your rights.</p>
-                </div>
+                <div class="bi-policy-docs">
+                    <div class="bi-policy-docs-intro">
+                        <h3>Student Policies</h3>
+                        <p>Official policy documents available for download.</p>
+                    </div>
 
-                <div class="bi-policy-grid">
-                    <div class="bi-policy-item">
-                        <div class="bi-policy-item-icon"><i class="fas fa-balance-scale"></i></div>
-                        <h4>Complaints and Appeals</h4>
-                        <p>A fair, transparent process for raising concerns and appealing decisions, including access to an independent external party.</p>
-                    </div>
-                    <div class="bi-policy-item">
-                        <div class="bi-policy-item-icon"><i class="fas fa-user-shield"></i></div>
-                        <h4>Privacy</h4>
-                        <p>How we collect, use, store and protect your personal information in line with the Privacy Act and the Australian Privacy Principles.</p>
-                    </div>
-                    <div class="bi-policy-item">
-                        <div class="bi-policy-item-icon"><i class="fas fa-file-invoice-dollar"></i></div>
-                        <h4>Fees, Charges and Refunds</h4>
-                        <p>What you pay, when, and your refund entitlements.</p>
-                    </div>
-                    <div class="bi-policy-item">
-                        <div class="bi-policy-item-icon"><i class="fas fa-clipboard-check"></i></div>
-                        <h4>Assessment</h4>
-                        <p>How assessment is conducted fairly and validly, in line with the principles of assessment and the rules of evidence.</p>
-                    </div>
-                    <div class="bi-policy-item bi-policy-item--wide">
-                        <div class="bi-policy-item-icon"><i class="fas fa-users"></i></div>
-                        <div class="bi-policy-item-body">
-                            <h4>Access and Equity</h4>
-                            <p>Our commitment to fair and equal access to training, regardless of background.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="bi-policy-cta">
-            <div class="container">
-                <div class="bi-policy-cta-inner">
-                    <div class="bi-policy-cta-copy">
-                        <h3>Need a Full Copy?</h3>
-                        <p>
-                            Full copies of these policies are available in the
-                            <a href="Downloads.aspx">Download Centre</a> or on request.
-                        </p>
-                    </div>
-                    <div class="bi-policy-cta-actions">
-                        <a href="Downloads.aspx" class="btn btn-theme effect btn-md"><i class="fas fa-download"></i> Download Centre</a>
-                        <a href="Contact.aspx" class="btn btn-light border effect btn-md"><i class="fas fa-envelope"></i> Request a Copy</a>
+                    <div class="bi-policy-table-wrap">
+                        <table class="bi-policy-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Policy</th>
+                                    <th scope="col" class="bi-policy-table-action-col">Download</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-label="Policy">Complaints and Appeals</td>
+                                    <td data-label="Download" class="bi-policy-table-action-col">
+                                        <a href="image/policy/Britts%20Imperial%20Complaints%20and%20Appeals%20Policy%20and%20Procedure_V1.1_Dec2025.docx" class="bi-policy-table-download" download><i class="fas fa-download"></i><span>Download</span></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Policy">Privacy</td>
+                                    <td data-label="Download" class="bi-policy-table-action-col">
+                                        <a href="image/policy/Britts%20Imperial%20Privacy%20Policy_V.1.1_Feb2026.docx" class="bi-policy-table-download" download><i class="fas fa-download"></i><span>Download</span></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Policy">Fees, Charges and Refunds</td>
+                                    <td data-label="Download" class="bi-policy-table-action-col">
+                                        <a href="image/policy/Britts%20Imperial%20Fees%20and%20Refund%20Policy%20and%20Procedure_V1.1_Jan2026.docx" class="bi-policy-table-download" download><i class="fas fa-download"></i><span>Download</span></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Policy">Assessment</td>
+                                    <td data-label="Download" class="bi-policy-table-action-col">
+                                        <a href="image/policy/Britts%20Imperial%20Assessment%20Policy%20and%20Procedure_V.1.1_Dec2025.docx" class="bi-policy-table-download" download><i class="fas fa-download"></i><span>Download</span></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Policy">Access and Equity</td>
+                                    <td data-label="Download" class="bi-policy-table-action-col">
+                                        <a href="image/policy/Britts%20Imperial%20Access%20and%20Equity%20Policy_V1.1_Dec2025.docx" class="bi-policy-table-download" download><i class="fas fa-download"></i><span>Download</span></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
