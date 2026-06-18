@@ -81,9 +81,8 @@
                             <span class="bi-contact-info-icon"><i class="fas fa-map-marker-alt"></i></span>
                             <div>
                                 <strong>Campus Locations</strong>
-                                <span>-----------------------------</span>
-                                <span>---- | ----- | ------------</span>
-                                <span>----------------------------</span>
+                                <span>Level 3 531 George St,</span>
+                                <span>SYDNEY, NSW, 2000</span>
                             </div>
                         </li>
                     </ul>
